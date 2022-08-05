@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap_sample",
+  "version": "1.0.0",
+  "description": "boostrap",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap-icons": "^1.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hero88/bootstrap_sample.git"
+  },
+  "keywords": [
+    "boostrap"
+  ],
+  "author": "Long",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hero88/bootstrap_sample/issues"
+  },
+  "homepage": "https://github.com/hero88/bootstrap_sample#readme"
+}

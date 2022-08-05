@@ -7,73 +7,134 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
         rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>Bootstrap</title>
 </head>
 <body>
-    <div class="container text-center">
-        <div class="row">
-          <div class="col">
-            1 of 3
-          </div>
-          <div class="col-6">
-            2 of 3 (wider)
-          </div>
-          <div class="col">
-            3 of 3
-          </div>
+    <div class="container">
+        <div class="row mb-3">
+            <h3>Navigation Bar</h3>
         </div>
-        <div class="row">
-          <div class="col">
-            1 of 3
-          </div>
-          <div class="col-5">
-            2 of 3 (wider)
-          </div>
-          <div class="col">
-            3 of 3
-          </div>
-        </div>
-    </div>
-    <hr>
-    <div class="container text-center">
-        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-        <div class="row">
-          <div class="col-md-8">.col-md-8</div>
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        </div>
-      
-        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-        <div class="row">
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-          <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-        </div>
-      
-        <!-- Columns are always 50% wide, on mobile and desktop -->
-        <div class="row">
-          <div class="col-6">.col-6</div>
-          <div class="col-6">.col-6</div>
+        <div class="row mb-3">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+            </nav>
         </div>
         <hr>
-        <div class="row">
-            <div class="col-4">
-                <img src="data:image/jpeg;base64,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" alt="Your IMG"/>
-            </div>
-            <div class="col-8">
-                <div class="row mb-3">
-                    <div class="col-4">Fullname</div>
-                    <div class="col-8">ABCXYZ</div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-4">Birthday</div>
-                    <div class="col-8">1234654</div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-4">Address</div>
-                    <div class="col-8">700000 HCM</div>
-                </div>   
-            </div>
+        <div class="row mb-3">
+            <h3 class="fw-bold">Icon and button</h3>
         </div>
+        <button type="submit" class="btn btn-primary"><span class="bi-search"></span> Search</button>
+        <hr>
+        <div class="row mb-3">
+            <h3>Vertical Form</h3>
+        </div>
+        <form>
+            <div class="mb-3">
+                <label class="form-label" for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            </div>
+            <div class="mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkRemember">
+                    <label class="form-check-label" for="checkRemember">Remember me</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+        <hr>
+        <div class="row mb-3">
+            <h3>Horizontal Form</h3>
+        </div>
+        <form>
+            <div class="row mb-3">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="checkRemember">
+                            <label class="form-check-label" for="checkRemember">Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </form>
+        <hr>
+        <div class="row mb-3">
+            <h3>Inline Form</h3>
+        </div>
+        <form class="mb-3">
+            <div class="row align-items-center g-3">
+                <div class="col-auto">
+                    <label class="visually-hidden" for="inputEmail">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+                <div class="col-auto">
+                    <label class="visually-hidden" for="inputPassword">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+                <div class="col-auto">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="checkRemember">
+                        <label class="form-check-label" for="checkRemember">Remember me</label>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </form>
     </div>
 </body>
 </html>
