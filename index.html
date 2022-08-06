@@ -29,6 +29,10 @@
         <p>If you click on the "Hide" button, I will disappear.</p>
         <button id="hide" class="btn btn-danger">Hide</button>
         <button id="show" class="btn btn-info">Show</button>
+        <hr>
+        <h2>AJAX example</h2>
+        <button class="btn btn-success" id="ajaxBtn">Get some data</button>
+        <p id="ajax-data" class="mt-3 fw-bold"></p>
     </div>
 </body>
 <script>
@@ -39,13 +43,23 @@
     else
       $("#msg").css('display','none');
   });
-
+  // Hide, Show
   $("#hide").click(function(){
     $("p").hide();
   });
   $("#show").click(function(){
     $("p").show();
   });
+  // Ajax
+  $('#ajaxBtn').click(function(){
+			$.ajax({
+        url: 'https://vast-castle-13621.herokuapp.com/products/',   // request url            
+				success: function (data, status, xhr) {    // success callback function
+						$('#ajax-data').append(data.products[10].name);
+				},
+        async: false
+      });
+	});
 
 </script>
 </html>
