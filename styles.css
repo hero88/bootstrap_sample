@@ -1,0 +1,30 @@
+h1 {
+  font-family: Arial;
+}
+.concrete {
+  font-family: Arial;
+}
+body {
+  background: #333333;
+  color: #454545;
+}
+.concrete {
+  color: #ff9900;
+}
+h1,
+h2 {
+  color: #333333;
+}
+#concrete h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+#concrete p {
+  font-size: 15px;
+}
+#concrete p a {
+  text-decoration: none;
+}
+#concrete p a:hover {
+  border-width: 1px;
+}
